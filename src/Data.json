@@ -1,0 +1,14 @@
+[
+    {
+        "title": "React",
+        "desc": "React is a JavaScript library for building user interfaces."
+    },
+    {
+        "title": "React Hooks",
+        "desc": "Hooks are functions that are used to manage state in React applications."
+    },
+    {
+        "title": "React Router",
+        "desc": "React Router is a React library for routing in the browser."
+    }
+]
