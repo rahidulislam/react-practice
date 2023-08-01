@@ -9,10 +9,11 @@ import Counter2 from './components/Counter/Counter2'
 import Counter from './components/Counter/Counter'
 import ConditionalCounter from './components/Counter/ConditionalCounter'
 import Form from './components/Form/Form'
+import Home from './components/Todo/Home'
 function App() {
-  const parenData=(childData)=>{
-    console.log(childData)
-  }
+  // const parenData=(childData)=>{
+  //   console.log(childData)
+  // }
   //const todos = Data.map((item, index)=>(<Todo key={index} title={item.title} desc={item.desc}/>))
   return (
     <>
@@ -21,8 +22,9 @@ function App() {
       {/* {todos} */}
       
 
-      <ConditionalCounter/>
-      <Form onChildData={parenData}/>
+      {/* <ConditionalCounter/>
+      <Form onChildData={parenData}/> */}
+      <Home/>
 
     </>
   )
