@@ -23,8 +23,9 @@ function App() {
       
 
       {/* <ConditionalCounter/>
-      <Form onChildData={parenData}/> */}
-      <Home/>
+      
+      {/* <Home/> */}
+      <Form />
 
     </>
   )
