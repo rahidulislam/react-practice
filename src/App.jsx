@@ -11,6 +11,7 @@ import ConditionalCounter from './components/Counter/ConditionalCounter'
 import Form from './components/Form/Form'
 import Home from './components/Todo/Home'
 function App() {
+  console.log("Rendering")
   // const parenData=(childData)=>{
   //   console.log(childData)
   // }
@@ -25,7 +26,8 @@ function App() {
       {/* <ConditionalCounter/>
       
       {/* <Home/> */}
-      <Form />
+      {/* <Form /> */}
+      <Counter/>
 
     </>
   )
