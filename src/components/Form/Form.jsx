@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
+import * as yup from 'yup';
 export default function Form(props) {
     // const [user, setUser] = useState({ name: "", email: "", password: "" });
     // const { name, email, password } = user;
@@ -10,6 +11,11 @@ export default function Form(props) {
             email: "",
             password: "",
         },
+        validationSchema: yup.object({
+            name: yup.string().min(2, "Name must be at least 2 characters").required,
+            email: yup.string().email().required,
+            password: yup.string().min(6).required
+        }),
         onSubmit: (values, {resetForm}) => {
             console.log(values);
             resetForm({values:""})
