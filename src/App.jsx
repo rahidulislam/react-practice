@@ -10,6 +10,7 @@ import Counter from './components/Counter/Counter'
 import ConditionalCounter from './components/Counter/ConditionalCounter'
 import Form from './components/Form/Form'
 import Home from './components/Todo/Home'
+import DataFetch from './components/DataFetch/DataFetch'
 function App() {
   console.log("Rendering")
   // const parenData=(childData)=>{
@@ -27,7 +28,7 @@ function App() {
       
       {/* <Home/> */}
       {/* <Form /> */}
-      <Counter/>
+      <DataFetch/>
 
     </>
   )
