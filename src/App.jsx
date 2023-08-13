@@ -11,6 +11,8 @@ import ConditionalCounter from './components/Counter/ConditionalCounter'
 import Form from './components/Form/Form'
 import Home from './components/Todo/Home'
 import DataFetch from './components/DataFetch/DataFetch'
+import UserRefClass from './components/UserRef/UserRefClass'
+import UserRefHook from './components/UserRef/UserRefHook'
 function App() {
   console.log("Rendering")
   // const parenData=(childData)=>{
@@ -28,7 +30,9 @@ function App() {
       
       {/* <Home/> */}
       {/* <Form /> */}
-      <DataFetch/>
+      {/* <DataFetch/> */}
+      {/* <UserRefClass/> */}
+      <UserRefHook/>
 
     </>
   )
