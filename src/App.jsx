@@ -26,23 +26,12 @@ function App() {
     const [users, setUsers] = useState(userData);
 
 
-
-    const addNewUser = (newUser) => {
-        setUsers((prevUsers) => [...prevUsers, newUser]);
-    };
-
-
-
-    const handleRemoveUser = (id) => {
-        const filteredUser = [...users].filter((user) => user.id !== id);
-        return setUsers(filteredUser);
-    };
     // const parenData=(childData)=>{
     //   console.log(childData)
     // }
     //const todos = Data.map((item, index)=>(<Todo key={index} title={item.title} desc={item.desc}/>))
     return (
-        <UserContext.Provider value={{users, setUsers,handleRemoveUser, addNewUser}}>
+        <UserContext.Provider value={{users, setUsers}}>
             {/* <h1 className='todoHeader'>Todo App</h1> */}
             {/* <Clock locale="bn-BD"/> */}
             {/* {todos} */}

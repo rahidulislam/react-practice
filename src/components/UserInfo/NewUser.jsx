@@ -3,15 +3,15 @@ import { UserContext } from "../../context/UserContext";
 
 const NewUser = () => {
     const [userName, setUserName] = useState("");
-    const { addNewUser } = useContext(UserContext);
-    
+    const { setUsers } = useContext(UserContext);
+
     const handleChange = (e) => {
         setUserName(e.target.value);
     };
     const handleSubmit = (e) => {
         e.preventDefault();
         const newUser = { id: new Date().getTime().toString(), name: userName };
-        addNewUser(newUser);
+        setUsers((prevUsers) => [...prevUsers, newUser]);
         setUserName("");
     };
     return (
