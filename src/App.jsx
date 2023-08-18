@@ -17,21 +17,16 @@ import UseReducer from "./components/UseReducer/UseReducer";
 import Component1 from "./components/PropDriling/Component1";
 import Users from "./components/UserInfo/Users";
 import NewUser from "./components/UserInfo/NewUser";
-import { UserContext } from "./context/UserContext";
+import UserProvider, { UserContext } from "./context/UserContext";
 function App() {
-    const userData = [
-        { id: 1, name: "Rahidul" },
-        { id: 2, name: "Selina" },
-    ];
-    const [users, setUsers] = useState(userData);
-
+    
 
     // const parenData=(childData)=>{
     //   console.log(childData)
     // }
     //const todos = Data.map((item, index)=>(<Todo key={index} title={item.title} desc={item.desc}/>))
     return (
-        <UserContext.Provider value={{users, setUsers}}>
+        <UserProvider>
             {/* <h1 className='todoHeader'>Todo App</h1> */}
             {/* <Clock locale="bn-BD"/> */}
             {/* {todos} */}
@@ -47,7 +42,7 @@ function App() {
             {/* <Component1/> */}
             <NewUser />
             <Users />
-        </UserContext.Provider>
+        </UserProvider>
     );
 }
 
