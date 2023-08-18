@@ -3,11 +3,12 @@ import { UserContext } from '../../context/UserContext'
 
 const User = ({user}) => {
     const {id, name} = user
-    const {users, setUsers} = useContext(UserContext)
+    const {dispatch } = useContext(UserContext)
 
     const handleDeleteUser = (id)=>{
-      const filteredUser = [...users].filter((user) => user.id !== id);
-      return setUsers(filteredUser);
+      // const filteredUser = [...users].filter((user) => user.id !== id);
+      // return setUsers(filteredUser);
+      dispatch({type:"REMOVE", payload:id})
     }
 
   return (
